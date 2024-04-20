@@ -1,6 +1,6 @@
 body {
-  background-color: black;
-  color: white;
+  background-color: white; /* Changer la couleur de fond en blanc */
+  color: black; /* Changer la couleur du texte en noir */
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -15,7 +15,29 @@ h1 {
   font-size: 32px;
 }
 
-#masonry-grid {
+main {
+  max-width: 800px; /* Limiter la largeur du contenu principal */
+  margin: 0 auto; /* Centrer le contenu sur la page */
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px; /* Espacement entre les sections */
+}
+
+hr {
+  border: none;
+  border-top: 1px solid black; /* Couleur et épaisseur de la ligne */
+  margin: 20px 0; /* Espacement avant et après la ligne */
+}
+
+h2 {
+  text-align: center; /* Centrer le texte */
+  font-size: 24px; /* Taille de police */
+  margin: 0; /* Supprimer les marges par défaut */
+}
+
+.masonry-grid {
   column-count: 2; /* Utilisation de 2 colonnes */
   column-gap: 10px;
 }
