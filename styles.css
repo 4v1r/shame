@@ -37,7 +37,7 @@ h2 {
 }
 
 .masonry-grid {
-  column-count: 2; /* Utilisation de 2 colonnes */
+  column-count: 4;
   column-gap: 10px;
 }
 
