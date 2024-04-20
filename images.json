@@ -1,8 +1,8 @@
 [
-  { "src": "assets/001.png", "tags": ["asshole"] },
-  { "src": "assets/002.png", "tags": ["wannabe"] },
-  { "src": "assets/003.png", "tags": ["retard"] },
-  { "src": "assets/004.png", "tags": ["egirl"] },
-  { "src": "assets/005.png", "tags": ["shitty-username"] },
-  { "src": "assets/006.png", "tags": ["asshole", "shitty-username"] }
+  { "src": "assets/0001.png", "tags": ["asshole"] },
+  { "src": "assets/0002.png", "tags": ["wannabe"] },
+  { "src": "assets/0003.png", "tags": ["retard"] },
+  { "src": "assets/0004.png", "tags": ["egirl"] },
+  { "src": "assets/0005.png", "tags": ["shitty-username"] },
+  { "src": "assets/0006.png", "tags": ["asshole", "shitty-username"] }
 ]
