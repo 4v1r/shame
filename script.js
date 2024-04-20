@@ -11,7 +11,8 @@ function renderImages(selectedTags) {
   imageContainer.innerHTML = ''; // Clear previous images
 
   images.forEach(image => {
-    if (selectedTags.every(tag => image.tags.includes(tag))) {
+    // Vérifiez si chaque étiquette sélectionnée correspond à au moins une des étiquettes de l'image
+    if (selectedTags.some(tag => image.tags.includes(tag))) {
       const card = document.createElement('div');
       card.classList.add('card');
       const img = document.createElement('img');
