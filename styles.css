@@ -44,7 +44,6 @@ h2 {
 .card {
   display: inline-block;
   margin: 0 10px 10px 0;
-  width: calc(50% - 1px);
 }
 
 .card img {
