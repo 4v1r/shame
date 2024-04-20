@@ -1,30 +1,49 @@
-const images = [
-  { src: 'assets/asshole/asshole001.png', tags: ['asshole', 'egirl'] },
-  { src: 'assets/wannabe/wannabe001.png', tags: ['wannabe', 'shitty-username'] },
-];
-
-// render images based on selected tags
-function renderImages(selectedTags) {
+document.addEventListener('DOMContentLoaded', function() {
+  const filters = document.querySelectorAll('.filter-button');
   const imageContainer = document.getElementById('image-container');
-  imageContainer.innerHTML = ''; // Clear previous images
+  let images = []; // Pour stocker toutes les images chargées
 
-  images.forEach(image => {
-    if (selectedTags.some(tag => image.tags.includes(tag))) {
-      const card = document.createElement('div');
-      card.classList.add('card');
+  // Charger les images à partir du fichier JSON
+  fetch('images.json')
+    .then(response => response.json())
+    .then(data => {
+      images = data; // Stocker les images chargées dans la variable images
+      renderImages(images); // Afficher toutes les images initialement
+    });
+
+  // Ajouter un écouteur d'événements pour chaque bouton de filtre
+  filters.forEach(filter => {
+    filter.addEventListener('click', function() {
+      const tag = this.getAttribute('data-tag');
+      const filteredImages = tag === 'everything' ? images : images.filter(image => image.tags.includes(tag));
+      renderImages(filteredImages); // Afficher les images filtrées
+      toggleButtonStyle(); // Mettre à jour le style des boutons
+    });
+  });
+
+  // Fonction pour afficher les images
+  function renderImages(images) {
+    imageContainer.innerHTML = ''; // Vider le conteneur d'images
+
+    images.forEach(image => {
       const img = document.createElement('img');
       img.src = image.src;
-      card.appendChild(img);
-      imageContainer.appendChild(card);
-    }
-  });
-}
+      imageContainer.appendChild(img);
+    });
+  }
 
-// handle search when tags are selected
-document.getElementById('tag-filter').addEventListener('change', function() {
-  const selectedTags = Array.from(this.selectedOptions).map(option => option.value);
-  renderImages(selectedTags);
+  // Fonction pour mettre à jour le style des boutons en fonction de leur état sélectionné
+  function toggleButtonStyle() {
+    filters.forEach(filter => {
+      const tag = filter.getAttribute('data-tag');
+      const isActive = filter.classList.contains('active');
+      const shouldBeActive = tag !== 'everything' && images.some(image => image.tags.includes(tag));
+
+      if (shouldBeActive && !isActive) {
+        filter.classList.add('active');
+      } else if (!shouldBeActive && isActive) {
+        filter.classList.remove('active');
+      }
+    });
+  }
 });
-
-// rendering with all images
-renderImages([]);
