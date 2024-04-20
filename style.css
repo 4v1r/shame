@@ -1,6 +1,6 @@
 body {
-  background-color: black;
-  color: white;
+  background-color: white; /* Changer la couleur de fond en blanc */
+  color: black; /* Changer la couleur du texte en noir */
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -16,17 +16,17 @@ h1 {
 }
 
 #masonry-grid {
-  column-count: 4;
+  column-count: 2; /* Utilisation de 2 colonnes */
   column-gap: 10px;
 }
 
 .card {
   display: inline-block;
   margin: 0 0 10px;
-  width: 100%;
+  width: calc(50% - 5px); /* Rendre les cartes (images) 50% plus petites */
 }
 
 .card img {
-  width: 100%;
+  width: 100%; /* Assurer que les images remplissent entièrement la largeur des cartes */
   border-radius: 5px;
 }
