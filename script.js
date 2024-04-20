@@ -8,4 +8,4 @@ function addImage(url) {
   grid.appendChild(card);
 }
 
-// addImage('path/image.jpg');
+addImage('/assets/images/shame001.png');
