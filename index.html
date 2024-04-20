@@ -9,37 +9,24 @@
 </head>
 <body>
   <header>
-    <h1>Welcome to the discord profile Hall of Shame</h1>
+    <h1>Welcome to the Discord Profile Hall of Shame</h1>
   </header>
   <main>
-    <section>
-      <h2>Asshole</h2>
-      <div id="masonry-grid-shit" class="masonry-grid">
-        <div class="card">
-          <img src="assets/asshole/asshole001.png" alt="#1">
-        </div>
-        <div class="card">
-          <img src="assets/asshole/asshole002.png" alt="#2">
-        </div>
-        <div class="card">
-          <img src="assets/asshole/asshole003.png" alt="#3">
-        </div>
-        <!-- asshole -->
-      </div>
-    </section>
-    <hr> <!-- border -->
-    <section>
-      <h2>Wanna Be</h2>
-      <div id="masonry-grid-wanna-be" class="masonry-grid">
-        <div class="card">
-          <img src="assets/wannabe/wannabe001.png" alt="#1">
-        </div>
-        <div class="card">
-          <img src="assets/wannabe/wannabe002.png" alt="#2">
-        </div>
-        <!-- wannabe -->
-      </div>
+    <div id="search-bar">
+      <label for="tag-filter">Filter by tags:</label>
+      <select id="tag-filter" multiple>
+        <option value="asshole">Asshole</option>
+        <option value="wannabe">Wannabe</option>
+        <option value="retard">Retard</option>
+        <option value="egirl">Egirl</option>
+        <option value="shitty-username">Shitty Username</option>
+      </select>
+    </div>
+    <hr> <!-- Separator -->
+    <section id="image-container">
+      <!-- Images will be dynamically added here -->
     </section>
   </main>
+  <script src="scripts.js"></script>
 </body>
 </html>
