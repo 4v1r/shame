@@ -43,8 +43,8 @@ h2 {
 
 .card {
   display: inline-block;
-  margin: 0 0 10px;
-  width: calc(50% - 5px); /* Rendre les cartes (images) 50% plus petites */
+  margin: 0 10px 10px 0;
+  width: calc(10% - 10px);
 }
 
 .card img {
