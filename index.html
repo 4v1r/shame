@@ -3,29 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="./assets/mocking.ico" type="image/x-icon">
   <title>Hall of Shame</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
     <h1>Welcome to the Discord Profile Hall of Shame</h1>
-  </header>
-  <main>
-    <div id="search-bar">
-      <label for="tag-filter">Filter by tags:</label>
-      <select id="tag-filter" multiple>
-        <option value="asshole">Asshole</option>
-        <option value="wannabe">Wannabe</option>
-        <option value="retard">Retard</option>
-        <option value="egirl">Egirl</option>
-        <option value="shitty-username">Shitty Username</option>
-      </select>
+    <div id="filters">
+      <button class="filter-button" data-tag="everything">Everything</button>
+      <button class="filter-button" data-tag="asshole">Asshole</button>
+      <button class="filter-button" data-tag="wannabe">Wannabe</button>
+      <button class="filter-button" data-tag="retard">Retard</button>
+      <button class="filter-button" data-tag="egirl">Egirl</button>
+      <button class="filter-button" data-tag="shitty-username">Shitty Username</button>
     </div>
-    <hr> <!-- Separator -->
-    <section id="image-container">
-      <!-- Images will be dynamically added here -->
-    </section>
+  </header>
+  <main id="image-container">
   </main>
   <script src="scripts.js"></script>
 </body>
