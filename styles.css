@@ -16,24 +16,24 @@ h1 {
 }
 
 main {
-  margin: 0 auto; /* Centrer le contenu sur la page */
+  margin: 0 auto;
   padding: 20px;
 }
 
 section {
-  margin-bottom: 20px; /* Espacement entre les sections */
+  margin-bottom: 20px;/
 }
 
 hr {
   border: none;
-  border-top: 1px solid black; /* Couleur et épaisseur de la ligne */
-  margin: 20px 0; /* Espacement avant et après la ligne */
+  border-top: 1px solid black;
+  margin: 20px 0;
 }
 
 h2 {
-  text-align: center; /* Centrer le texte */
-  font-size: 24px; /* Taille de police */
-  margin: 0; /* Supprimer les marges par défaut */
+  text-align: center;
+  font-size: 24px;
+  margin: 0;
 }
 
 .masonry-grid {
@@ -47,6 +47,6 @@ h2 {
 }
 
 .card img {
-  width: 100%; /* Assurer que les images remplissent entièrement la largeur des cartes */
+  width: 100%;
   border-radius: 5px;
 }
