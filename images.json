@@ -1,0 +1,8 @@
+[
+  { "src": "assets/asshole001.png", "tags": ["asshole"] },
+  { "src": "assets/wannabe001.png", "tags": ["wannabe"] },
+  { "src": "assets/retard001.png", "tags": ["retard"] },
+  { "src": "assets/egirl001.png", "tags": ["egirl"] },
+  { "src": "assets/shitty_username001.png", "tags": ["shitty-username"] },
+  { "src": "assets/asshole002.png", "tags": ["asshole", "shitty-username"] }
+]
